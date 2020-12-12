@@ -1,14 +1,26 @@
 <template>
-    <div id="app" class="container-fluid">
-        <div class="row">
-            <div class="col-md-3">
-                <nav-menu params="route: route"></nav-menu>
+<div id="app">
+<nav-menu params="route: route"></nav-menu>
+        <div class="content-body">
+
+            <!-- <div class="row page-titles mx-0">
+                <div class="col p-md-0">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="javascript:void(0)">Dashboard</a></li>
+                        <li class="breadcrumb-item active"><a href="javascript:void(0)">Home</a></li>
+                    </ol>
+                </div>
+            </div> -->
+            <!-- row -->
+
+            <div class="container-fluid">
+               <router-view></router-view>
             </div>
-            <div class="col-sm-9">
-                <router-view></router-view>
-            </div>
+            <!-- #/ container -->
         </div>
-    </div>
+</div>
+
+
 </template>
 
 <script>
